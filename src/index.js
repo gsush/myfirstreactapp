@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// // react dom is having render method
+// ReactDOM.render(document.getElementById("root"));
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React, { Component } from "react";
+import ReactDOM from "react-dom"; //
+import App from "./app";
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// how to create class based component
+
+class App extends Component {
+    render() {
+        return <h1>I am class based component</h1>;
+    }
+}
+// how to create function based component
+ReactDOM.render(<App />, document.getElementById("root"));
+
+// import React from "react";
+// import ReactDOM from "react-dom";
+
+//ReactDom.render(<App />, document.getElementById("root"));
