@@ -5,24 +5,16 @@
 
 import React, { Component } from "react";
 import reactDom from "react-dom";
+import ImagewithFunction from "./Components/ImagewithFunction";
 //import App from "./App";
-import ClassBassedCount from "./Components/ClassBasedCount";
-import Classbasedcomponent from "./Components/Classbasedcomponent";
-import Functionbasedcomponent from "./Components/Functionbasedcomponent";
-import FunctionbasedCounter from "./Components/FunctionbasedCounter";
-import Random from "./Components/Random";
+
+import RandomImage from "./Components/RandomImage";
 class App extends Component {
     render() {
         return <div>
-            <ClassBassedCount />
-            <hr></hr>
-            <Classbasedcomponent />
-            <hr></hr>
-            <Functionbasedcomponent />
-            <hr></hr>
-            <FunctionbasedCounter />
-            <hr></hr>
-            <Random />
+
+            <RandomImage />
+            <ImagewithFunction />
         </div>
 
 
