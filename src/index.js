@@ -4,20 +4,28 @@
 // ReactDOM.render(document.getElementById("root"));
 
 import React, { Component } from "react";
-import ReactDOM from "react-dom"; //
-import App from "./app";
-
-// how to create class based component
-
+import reactDom from "react-dom";
+//import App from "./App";
+import ClassBassedCount from "./Components/ClassBasedCount";
+import Classbasedcomponent from "./Components/Classbasedcomponent";
+import Functionbasedcomponent from "./Components/Functionbasedcomponent";
+import FunctionbasedCounter from "./Components/FunctionbasedCounter";
+import Random from "./Components/Random";
 class App extends Component {
     render() {
-        return <h1>I am class based component</h1>;
+        return <div>
+            <ClassBassedCount />
+            <hr></hr>
+            <Classbasedcomponent />
+            <hr></hr>
+            <Functionbasedcomponent />
+            <hr></hr>
+            <FunctionbasedCounter />
+            <hr></hr>
+            <Random />
+        </div>
+
+
     }
 }
-// how to create function based component
-ReactDOM.render(<App />, document.getElementById("root"));
-
-// import React from "react";
-// import ReactDOM from "react-dom";
-
-//ReactDom.render(<App />, document.getElementById("root"));
+reactDom.render(<App />, document.getElementById("root"));
