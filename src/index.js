@@ -5,16 +5,22 @@
 
 import React, { Component } from "react";
 import reactDom from "react-dom";
-import ImagewithFunction from "./Components/ImagewithFunction";
+import ChildComponent from "./Components/ChildComponent";
+import ChildwithClassBased from "./Components/ChildwithClassBased";
+import ImagewithFunction from "./Components/ImagewithFunction"
+import RandomImage from "./Components/RandomImage"
 //import App from "./App";
 
-import RandomImage from "./Components/RandomImage";
+
 class App extends Component {
     render() {
         return <div>
 
-            <RandomImage />
+
+            <ChildComponent username="snehangshu" />
+            <ChildwithClassBased username="sameer" />
             <ImagewithFunction />
+            <RandomImage />
         </div>
 
 

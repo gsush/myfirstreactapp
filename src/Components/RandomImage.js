@@ -7,13 +7,13 @@ class RandomImage extends Component {
     };
     generateRandomImage = () => {
         this.setState({
-            randomImg: faker.image.avatar()
+            randomImg: faker.image.avatar(),
         });
     }
     render() {
         return (
             <div>
-                <img src={this.randomImg}>Image</img>
+                <img src={this.state.randomImg} alt="img" />
                 <button onClick={this.generateRandomImage}>RandomImage</button>
             </div>
         )
